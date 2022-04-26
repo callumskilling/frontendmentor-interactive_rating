@@ -5,12 +5,11 @@
     --color-neutral-white: hsl(0,0%,100%);
     --color-neutral-light-grey: hsl(217, 12%,63%);
     --color-dark-dark-blue: hsl(213,19%,18%);
+    --color-dark-dark-blue-gradient: radial-gradient(at top,hsl(213,19%,18%), hsl(213,19%,18%, 0.3));
     --color-dark-very-dark-blue: hsl(216,12%,8%);
 }
 
 * {
-    margin: 0;
-    padding: 0;
     list-style-type: none;
     font-family: 'Overpass', sans-serif;
     color: var(--color-neutral-white);
@@ -25,16 +24,27 @@ body {
     background-color: var(--color-dark-very-dark-blue);
 }
 
-#star_icon, li {
+.circle {
     background-color:hsl(217, 12%,63%, 0.08);
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
 }
 
+.star_icon_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 400;
+}
+
 ul {
     display: flex;
-    justify-content: space-around;
+    padding: 0;
+    justify-content: space-between;
 }
 
 li {
@@ -46,11 +56,24 @@ li {
 
 p {
     color: var(--color-neutral-light-grey);
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0;
 }
 
 .container {
-    background-color: var(--color-dark-dark-blue);
+    background: var(--color-dark-dark-blue-gradient);
     width: 80%;
-    border-radius: 10px;
-    padding: 1rem;
+    border-radius: 1.5rem;
+    padding: 1.75rem;
+}
+
+button {
+    color: var(--color-neutral-white);
+    background-color: var(--color-primary-orange);
+    border: none;
+    width: 100%;
+    height: 3rem;
+    border-radius: 1.5rem;
+    letter-spacing: .15rem;
 }
