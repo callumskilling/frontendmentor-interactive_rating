@@ -66,6 +66,6 @@ ratingFive.addEventListener('click', () => {
 })
 
 submit.addEventListener('click', () => {
-    feedbackForm.setAttribute("form-visible",false)
-    feedbackSubmitted.setAttribute("form-visible",true)
+    feedbackForm.setAttribute("form-visible","false")
+    feedbackSubmitted.setAttribute("form-visible","true")
 })

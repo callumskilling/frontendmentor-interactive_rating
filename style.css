@@ -96,7 +96,7 @@ button:hover {
     transition: all 0.2s ease-in-out;
 }
 
-.feedback_submitted[form-visible=true] {
+.feedback_submitted[form-visible="true"] {
     display: flex;
     flex-direction: column;
     justify-content: center;
