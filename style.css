@@ -30,9 +30,11 @@ body {
 
 .circle {
     background-color:hsl(217, 12%,63%,0.08);
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
+    margin-bottom: .75rem;
+    margin-top: 1rem;
 }
 
 .rating:hover {
@@ -43,6 +45,7 @@ body {
 }
 
 .star_icon_container {
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,6 +53,7 @@ body {
 
 h1 {
     font-weight: 400;
+    font-size: 1.5rem;
 }
 
 ul {
@@ -63,18 +67,19 @@ li {
     justify-content: center;
     align-items: center;
     color: var(--color-neutral-light-grey);
+    font-size: 15px;
 }
 
 p {
     color: var(--color-neutral-light-grey);
-    font-size: 15px;
+    font-size: 13.5px;
     font-weight: 400;
-    padding: 0;
+    line-height: 1.5rem;
 }
 
 .container {
     background: var(--color-dark-dark-blue-gradient);
-    width: min(80%, 23rem);
+    width: min(76%, 23rem);
     border-radius: 1.5rem;
     padding: 1.75rem;
 }
@@ -84,10 +89,11 @@ button {
     background-color: var(--color-primary-orange);
     border: none;
     width: 100%;
-    height: 3rem;
+    height: 2.75rem;
     border-radius: 1.5rem;
     letter-spacing: .15rem;
     cursor: pointer;
+    margin-top: 0;
 }
 
 button:hover {
@@ -99,8 +105,19 @@ button:hover {
 .feedback_submitted[form-visible="true"] {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+}
+
+.rating_statement {
+    color: var(--color-primary-orange);
+    background-color: var(--color-dark-dark-blue);
+    border-radius: 1.5rem;
+    padding: 0.25rem 1rem;
+}
+
+.feedback_submitted > p {
+    text-align: center;
 }
 
 .attribution {
