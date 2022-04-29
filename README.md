@@ -29,85 +29,57 @@ Users should be able to:
 - Select and submit a number rating
 - See the "Thank you" card state after submitting a rating
 
-### Screenshot
-
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/rating-submission-using-javascript-r1tbmeKH9
+- Live Site URL: https://callumskilling.github.io/frontendmentor-interactive_rating/
 
 ## My process
 
+I started with the HTML and styled with a mobile first approach. After getting a starting point with the conten, I then tackled the Javascript to retrieve what I needed from the DOM and write the function that would provide the inner HTML for the result on the second state.
+
 ### Built with
 
-- Semantic HTML5 markup
+- HTML
 - CSS custom properties
-- Flexbox
-- CSS Grid
+- Flex
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I struggled with keeping my pseudo CSS working after a user selects their rating, the color change prompted on hovering stopped working, I have not **yet** found the solution to this.
 
-To see how you can add code snippets, see below:
+I did enjoy using custom properties in my CSS and noticing small parts of the design that make it look a lot more professional and less flat:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+:root {
+    --color-primary-orange: hsl(25,97%,53%);
+    --color-neutral-white: hsl(0,0%,100%);
+    --color-neutral-light-grey: hsl(217, 12%,63%);
+    --color-dark-dark-blue: hsl(213,19%,18%);
+    --color-dark-dark-blue-gradient: radial-gradient(at top,hsl(213,19%,18%), hsl(213,19%,18%, 0.3));
+    --color-dark-very-dark-blue: hsl(216,12%,8%);
 }
 ```
+And I thought this would be a great time for using a switch statement:
+
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+switch (number) {
+        case 1:
+            ratingOne.style.backgroundColor = "var(--color-neutral-light-grey)";
+            ratingOne.style.color = "var(--color-neutral-white)";
+            ratingStatement.innerHTML="You selected 1 out of 5";
+            break;
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Definitely want to learn more about how I could have kept the pseudo css working after my function ran.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+https://www.pureref.com - Primarily a drawing tool but it has been handy to use when I have not yet gone Pro with my Frontend Mentor membership so I didn't get the design files, just jpegs.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - Callum Skilling (https://www.callumskilling.me)
