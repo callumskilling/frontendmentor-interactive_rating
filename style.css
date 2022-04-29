@@ -159,6 +159,13 @@ button:hover {
     align-items: center;
 }
 
+@media only screen and (min-width:1080px) {
+    .feedback_submitted > svg {
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
 .rating_statement {
     color: var(--color-primary-orange);
     background-color: var(--color-dark-dark-blue);
