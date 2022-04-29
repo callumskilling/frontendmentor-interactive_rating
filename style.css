@@ -37,6 +37,13 @@ body {
     margin-top: 1rem;
 }
 
+@media only screen and (min-width:1080px) {
+    .circle {
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
 .rating:hover {
     cursor: pointer;
     background-color: var(--color-primary-orange);
@@ -51,9 +58,23 @@ body {
     align-items: center;
 }
 
+@media only screen and (min-width:1080px) {
+    .star_icon_container {
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+}
+
 h1 {
     font-weight: 400;
     font-size: 1.5rem;
+}
+
+@media only screen and (min-width:1080px) {
+    h1 {
+        padding-left: 5%;
+        font-size: 2.5rem;
+    }
 }
 
 ul {
@@ -70,6 +91,16 @@ li {
     font-size: 15px;
 }
 
+@media only screen and (min-width:1080px) {
+    ul {
+        justify-content: space-evenly;
+    }
+
+    li {
+        font-size: 1.25rem;
+    }
+}
+
 p {
     color: var(--color-neutral-light-grey);
     font-size: 13.5px;
@@ -77,9 +108,17 @@ p {
     line-height: 1.5rem;
 }
 
+@media only screen and (min-width:1080px) {
+    p {
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+        padding-left: 5%;
+    }
+}
+
 .container {
     background: var(--color-dark-dark-blue-gradient);
-    width: min(76%, 23rem);
+    width: min(76%, 31rem);
     border-radius: 1.5rem;
     padding: 1.75rem;
 }
@@ -95,6 +134,17 @@ button {
     cursor: pointer;
     margin-top: 0;
 }
+
+@media only screen and (min-width:1080px) {
+    button {
+        width:90%;
+        height: 3.5rem;
+        margin-left: 5%;
+        font-size: 1.25rem;
+        margin-top: 1rem;
+    }
+}
+
 
 button:hover {
     background-color: var(--color-neutral-white);
